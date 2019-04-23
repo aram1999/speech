@@ -13,7 +13,6 @@ def get_data_from_file(filename):
         new_data = data[:,0]
     else:
         new_data = data  
-    print("HEY LOOK AT HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1",len(new_data))
     return  new_data
 
 def cut(arr,filename):
@@ -34,7 +33,6 @@ def cut(arr,filename):
         elif(abs(arr[i]) >= abs(ave) and index == True):
             b.append(arr[i])
     #print(b)
-    print("//////////////////////////////////////////////*********************************//////////////////////////////////////////////////////////")
     index = False
     #print(ave)
     c = []
@@ -88,7 +86,6 @@ def stretch_files(et , sig, sig_filename):
 #     if((factor_kot - math.floor(factor_kot)) < 0.5):
 #         factor = math.floor(factor_kot) + 0.5
 # =============================================================================
-    print("write down the factor!",factor)
     new = stretch( sig_filename, factor )
     return new
 
